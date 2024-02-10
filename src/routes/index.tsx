@@ -25,19 +25,20 @@ export default component$(() => {
   return (
     <>
       <div>
-        <form preventdefault:submit onSubmit$={ async () => {
+        <form class={"flex items-center justify-center mx-4 mt-6 "} preventdefault:submit onSubmit$={ async () => {
           redirect.value = "Fetching..."
           redirect.value = await getRedirectURL(paymentLink.value)
         }}>
-          <input type="text" placeholder={"Paste the stripe payment link here"} onInput$={(e) => {
+          <input class={"w-2/3 py-2.5"} type="text" placeholder={"Paste the stripe payment link here"} onInput$={(e) => {
             paymentLink.value = (e.target as HTMLInputElement).value
           }}/>
-          <input type="submit"/>
+          <input type="submit" class={"w-1/3"}/>
         </form>
       </div>
-      <div>
-        <h2>The redirect url will appear underneath. Feel free to click it or copy it.</h2>
-        <a href={redirect.value}>{redirect.value}</a>
+      <div class={"mx-4 mt-2"}>
+        <p class={"mb-8 text-gray-300 font-light"}>The redirect url will appear underneath. Feel free to click it or copy it.</p>
+        <p class={"font-light"}>The redirect url:</p>
+        <a class={"font-bold mt-1"} href={redirect.value}>{redirect.value}</a>
       </div>
     </>
   );
