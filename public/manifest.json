@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "qwik-project-name",
-  "short_name": "Welcome to Qwik",
+  "name": "Get-stripe-payment-link-redirect-url",
+  "short_name": "Get the Stripe redirect url",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#fff",
-  "description": "A Qwik project app."
+  "background_color": "#fffff",
+  "description": "This site allows you to get the redirect url of any stripe payment link"
 }

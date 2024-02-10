@@ -15,11 +15,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Welcome to Qwik",
+  title: "RedirectURL - Stripe payment link",
   meta: [
     {
       name: "description",
-      content: "Qwik site description",
+      content: "Get the redirect url of any stripe checkout link",
     },
   ],
 };
