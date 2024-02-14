@@ -43,3 +43,6 @@ lerna-debug.log*
 # Firebase
 functions/server
 functions/node_modules
+
+# Netlify
+.netlify

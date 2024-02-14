@@ -45,7 +45,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "RedirectURL - Stripe payment link",
+  title: "StripeRedirectURL - payment link",
   meta: [
     {
       name: "description",

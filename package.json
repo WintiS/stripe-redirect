@@ -2,7 +2,7 @@
   "name": "my-qwik-empty-starter",
   "description": "App with Routing built-in ready to create your app",
   "engines": {
-    "node": ">=15.0.0"
+    "node": ">=20.0.0"
   },
   "private": true,
   "trustedDependencies": [
@@ -13,9 +13,9 @@
     "build": "qwik build",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.preview.tsx",
-    "build.server": "vite build -c adapters/firebase/vite.config.ts",
+    "build.server": "vite build -c adapters/netlify-edge/vite.config.ts",
     "build.types": "tsc --incremental --noEmit",
-    "deploy": "firebase deploy",
+    "deploy": "netlify deploy --build",
     "dev": "vite --mode ssr",
     "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
     "fmt": "prettier --write .",
@@ -29,6 +29,7 @@
   "devDependencies": {
     "@builder.io/qwik": "^1.4.4",
     "@builder.io/qwik-city": "^1.4.4",
+    "@netlify/edge-functions": "^2.0.0",
     "@types/eslint": "^8.56.2",
     "@types/node": "^20.11.6",
     "@typescript-eslint/eslint-plugin": "^6.19.1",
@@ -37,6 +38,7 @@
     "eslint": "^8.56.0",
     "eslint-plugin-qwik": "^1.4.4",
     "firebase-tools": "^12.6.2",
+    "netlify-cli": "^15.0.0",
     "postcss": "^8.4.31",
     "prettier": "^3.2.4",
     "prettier-plugin-tailwindcss": "^0.5.4",
