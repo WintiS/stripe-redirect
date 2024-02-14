@@ -49,7 +49,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
-      content: "Get the redirect url of any stripe checkout linkk",
+      content: "Get the redirect url of any stripe checkout link",
     },
   ],
 };
